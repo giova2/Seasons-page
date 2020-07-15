@@ -1,0 +1,72 @@
+$characters: (
+  "icon-random-a": 1,
+  "icon-random-b": 2,
+  "icon-random-c": 3,
+  "icon-random-d": 3.7,
+  "icon-random-e": 4.4,
+  "icon-random-f": 5,
+  "icon-random-g": 6,
+  "icon-random-h": 7,
+  "icon-random-i": 8,
+  "icon-random-j": 9,
+  "icon-random-k": 10,
+  "icon-random-l": 11,
+  "icon-random-m": 12,
+);
+
+@each $name, $delay in $characters {
+  @for $i from 1 through 10 {
+    $random-l: random(100);
+    $random-t: random(50);
+
+    .#{$name}.snow#{$i} {
+      --left-local: #{$random-l}vw;
+      --top-local: #{(-$random-t)}vh;
+    }
+  }
+  .#{$name} {
+    position: absolute;
+    animation: #{$name}-animate 10s linear infinite;
+    animation-delay: #{$delay}s;
+    left: var(--left-local);
+    top: var(--top-local);
+  }
+  $random-10: random();
+  $random-20: random();
+  $random-30: random();
+  $random-40: random();
+  $random-50: random();
+  $random-60: random();
+  $random-70: random();
+  $random-80: random();
+  @keyframes #{$name}-animate {
+    10% {
+      left: calc(var(--left-local) + #{$random-10}vw);
+    }
+    22% {
+      left: calc(var(--left-local) - #{$random-20}vw);
+    }
+    30% {
+      left: calc(var(--left-local) + #{$random-30}vw);
+    }
+    43% {
+      left: calc(var(--left-local) - #{$random-40}vw);
+    }
+    52% {
+      left: calc(var(--left-local) + #{$random-50}vw);
+    }
+    61% {
+      left: calc(var(--left-local) - #{$random-60}vw);
+    }
+    70% {
+      left: calc(var(--left-local) + #{$random-70}vw);
+    }
+    85% {
+      left: calc(var(--left-local) - #{$random-80}vw);
+    }
+    100% {
+      left: calc(var(--left-local) + -1%);
+      top: 101vh;
+    }
+  }
+}
