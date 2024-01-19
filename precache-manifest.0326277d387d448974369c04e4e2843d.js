@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "58a367d98fefa1b966e0",
-    "url": "/Seasons-page/static/css/main.d9ec465b.chunk.css"
+    "revision": "be3dacb12177f333bed1",
+    "url": "/Seasons-page/static/css/main.700de623.chunk.css"
   },
   {
-    "revision": "58a367d98fefa1b966e0",
-    "url": "/Seasons-page/static/js/main.7f409f64.chunk.js"
+    "revision": "be3dacb12177f333bed1",
+    "url": "/Seasons-page/static/js/main.4e2e09ee.chunk.js"
   },
   {
     "revision": "cc83c97d3384d00cf14d",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/Seasons-page/static/js/2.c2695c00.chunk.js"
   },
   {
-    "revision": "53bbf50162734360441eb91f856cad88",
+    "revision": "260d9939968e579397e567e136f20280",
     "url": "/Seasons-page/index.html"
   }
 ];
