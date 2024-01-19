@@ -8,6 +8,10 @@ body {
   height: 100vh;
 }
 
+.season-display h1{
+  z-index: 2;
+}
+
 .Summer {
   background-color: wheat;
 }

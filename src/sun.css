@@ -1,5 +1,6 @@
 .orbit {
   position: absolute;
+  z-index: 1;
   width: 80vmin;
   height: 80vmin;
   -webkit-animation: orbit 10s linear infinite;
